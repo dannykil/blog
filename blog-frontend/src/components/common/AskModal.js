@@ -36,19 +36,23 @@ const AskModalBlock = styled.div`
   .buttons {
     // className이 buttons인 모든 태그에 css 적용
     display: flex; // display: flex 속성이 적용된 요소는 flex container가 되고, flex contatiner의 자식 요소는 자동적으로 flex item이 됨
-    justify-content: flex-end;
+    justify-content: flex-end; // flex container의 속성
   }
 `;
 
+// Button 컴포넌트들에 공통적으로 적용되는 속성
 const StyledButton = styled(Button)`
-  height: 2rem;
+  height: 2rem; // 버튼의 높이
+  /* margin-left: 0.75rem; // 버튼의 좌측 여백 */
   & + & {
-    margin-left: 0.75rem;
+    // 부모선택자 + 부모선택자, 위와 차이가 없다(지금까지 아는 지식에서는)
+    margin-left: 0.75rem; // 버튼의 좌측 여백
   }
 `;
 
+// AskModal 컴포넌트에서 받아올 수 있는 속성
 const AskModal = ({
-  visible,
+  visible, // 모달창을 보여줄지 말지 여부
   title,
   description,
   confirmText = '확인',
