@@ -36,7 +36,7 @@ const AskModalBlock = styled.div`
   .buttons {
     // className이 buttons인 모든 태그에 css 적용
     display: flex; // display: flex 속성이 적용된 요소는 flex container가 되고, flex contatiner의 자식 요소는 자동적으로 flex item이 됨
-    justify-content: flex-end; // flex container의 속성
+    justify-content: flex-end; // flex container의 속성으로 flex-direction이 row(가로 배치)일 때는 아래, column(세로 배치)일 때는 오른쪽으로 정렬
   }
 `;
 
