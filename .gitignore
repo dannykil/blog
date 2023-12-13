@@ -2,7 +2,7 @@
 *.lock
 *.lock
 *.lock
-*.json
+
 blog-backend/.DS_Store
 blog-backend/node_modules/.DS_Store
 blog-frontend/yarn.lock
